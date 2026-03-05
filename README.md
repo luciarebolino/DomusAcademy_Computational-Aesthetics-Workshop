@@ -1,7 +1,6 @@
-# Computational Aesthetics Workshop
+# Computational Aesthetics 
 
-A hands-on toolkit to collect and render visual data from Google Street View, satellite maps, and Places.
-Use this repository to generate image sequences and videos for route-based and place-based computational aesthetics experiments.
+A hands-on toolkit to collect and render visual data scraping data from Google Maps.
 
 <img width="1052" height="526" alt="Screenshot 2026-03-05 at 8 38 38 PM" src="https://github.com/user-attachments/assets/e1570fb2-2b72-45a5-872e-5cdfff43e204" />
 
@@ -223,11 +222,8 @@ npm run places
 
 1. `command not found: node` → Node.js not installed
 2. `command not found: ffmpeg` → FFmpeg not installed
-3. API errors (`REQUEST_DENIED`, `OVER_QUERY_LIMIT`) → check billing, enabled APIs, and API key restrictions
-4. Empty output for places → bbox is too small/incorrect, or the selected place type has no matches in that area
+3. Empty output for places → bbox is too small/incorrect, or the selected place type has no matches in that area
 
 ---
 
-## 9) Classroom reset (optional)
 
-If you want a clean run, delete old output folders before running again.

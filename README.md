@@ -1,6 +1,6 @@
 # Computational Aesthetics 
 
-A hands-on toolkit to collect and render visual data scraping data from Google Maps.
+A hands-on toolkit to collect and render visual data scraping information from Google Maps.
 
 <img width="1052" height="526" alt="Screenshot 2026-03-05 at 8 38 38 PM" src="https://github.com/user-attachments/assets/e1570fb2-2b72-45a5-872e-5cdfff43e204" />
 

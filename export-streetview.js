@@ -4,7 +4,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 // ============================================
-// 🧑‍🎓 STUDENT TWEAKS (EDIT THIS BLOCK)
+// TWEAKS (EDIT THIS BLOCK)
 // ============================================
 
 const API_KEY = process.env.GOOGLE_API_KEY || 'AIzaSyDf2b_bwfWvNMgMr2XZdTfbcXQHxWqux8A';
@@ -23,11 +23,11 @@ const MAX_FRAMES = 200;
 const DELAY_MS = 100;
 
 // ============================================
-// 🔒 WORKSHOP LOGIC (DON'T EDIT BELOW)
+// WORKSHOP LOGIC (DON'T EDIT BELOW)
 // ============================================
 
 // ============================================
-// 🔧 HELPER FUNCTIONS
+// HELPER FUNCTIONS
 // ============================================
 
 function getDistance(lat1, lon1, lat2, lon2) {

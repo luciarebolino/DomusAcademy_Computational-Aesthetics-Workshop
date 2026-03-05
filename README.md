@@ -1,10 +1,54 @@
-# KML Export Suite (Student Setup)
+#<img width="1052" height="526" alt="Screenshot 2026-03-05 at 8 38 38 PM" src="https://github.com/user-attachments/assets/e1570fb2-2b72-45a5-872e-5cdfff43e204" />
+Computational Aesthetics
 
-This guide assumes you have **never coded before** and this is your **first time using VS Code**.
+
+
+## References
+
+- [Laura Kurgan](https://c4sr.columbia.edu/projects/plain-sight)
+- [CSR - Conflict Urbanism](https://centerforspatialresearch.github.io/conflict_urbanism_sp2023/2023/04/28/Those-Who-Live-and-Travel-in-the-Dark.html)
+- [Robert Pietrusko](https://www.warning-office.org/wo-test-sites)
+- [Sam Lavigne](https://lav.io/projects/street-views/)
+- [James Bridle](https://jamesbridle.com/works/every-cctv-camera-cc)
+- [Clement Valla](https://clementvalla.com/work/postcards-from-google-earth/)
+- [Dan Miller](https://dl.acm.org/doi/10.1145/3715668.3736392#:~:text=As%20we%20Witness%20the%20unraveling,stored%20the%20files%20%5B9%5D.)
+- [Mario Santamaria](https://www.mariosantamaria.net/Emerald-black-latency/)
+- [Simon Weckert](https://www.simonweckert.com/googlemapshacks.html)
+- [Jenny Odell](https://www.jennyodell.com/satellite-landscapes.html)
+- [Josh Begley](https://joshbegley.com/)
+- [WTTDOTM](https://trafficcamphotobooth.com/animenyc.html)
+- [Tatu Gustaffsson](https://stanisland.com/2024/10/08/tatu-gustaffsson-cctv-project-finland/)
+
 
 ---
 
-## 0) Install everything first (step by step)
+## HOW TO GET DATA
+We will Use Google APIs to scrape information ...
+
+---
+
+## 1) Google API setup (required)
+
+In Google Cloud Console:
+
+1. Create or select a project
+2. Enable billing on the project
+3. Enable these APIs:
+	- **Street View Static API**
+	- **Maps Static API**
+	- **Places API**
+	- **Maps JavaScript API** (needed for oblique script)
+4. Create an API key
+5. Paste the key into the scripts (in the `TWEAKS` block), or set environment variable `GOOGLE_API_KEY`
+
+---
+
+- **Google My Maps** https://www.google.com/maps/d/
+Trace Line percorso for car, export file as KML, drag and drop the file in this folder and name it points.kml (IMPO!!)
+- **Google Places** https://developers.google.com/maps/documentation/places/web-service/legacy/supported_types
+Select from this list the tag you want to investigate and scrape
+
+## 0) Install all libraries (step by step)
 
 ### Option A — macOS
 
@@ -69,23 +113,7 @@ ffmpeg -version
 
 If all 3 commands print a version, setup is OK.
 
----
 
-## 1) Google API setup (required)
-
-In Google Cloud Console:
-
-1. Create or select a project
-2. Enable billing on the project
-3. Enable these APIs:
-	- **Street View Static API**
-	- **Maps Static API**
-	- **Places API**
-	- **Maps JavaScript API** (needed for oblique script)
-4. Create an API key
-5. Paste the key into the scripts (in the `🧑‍🎓 STUDENT TWEAKS` block), or set environment variable `GOOGLE_API_KEY`
-
----
 
 ## 2) Open project in VS Code
 
@@ -112,7 +140,7 @@ Do this once on each computer before running scripts.
 
 Only edit values in blocks labeled:
 
-- `🧑‍🎓 STUDENT TWEAKS (EDIT THIS BLOCK)`
+- `TWEAKS (EDIT THIS BLOCK)`
 
 Main input route file:
 
@@ -129,23 +157,23 @@ Main input route file:
 
 ---
 
-## 6) Beginner run commands
+## 6) Run commands
 
-### A) Street View
+### A) Street 
 
 ```bash
 npm run street:check
 npm run street
 ```
 
-### B) Satellite route
+### B) Satellite 
 
 ```bash
 npm run satellite:check
 npm run satellite
 ```
 
-### C) Oblique 3D route
+### C) 3D 
 
 ```bash
 npm run oblique:check
@@ -159,11 +187,11 @@ npm run oblique:rough:check
 npm run oblique:rough
 ```
 
-### D) Places storefront + satellite
+### D) Storefront + Satellite
 
 Edit in `export-places-storefront-satellite.js`:
 
-- `BBOX_COORDS` with format: `west,south,east,north`
+- `BBOX_COORDS` with format: `west,south,east,north`  (take bbox from here in CSV format: https://boundingbox.klokantech.com/)
 - `PLACE_TYPES`, example: `['restaurant']` or `['restaurant', 'cafe']`
 
 Then run:
@@ -179,7 +207,7 @@ npm run places
 
 - Street frames: `output/streetview/`
 - Satellite frames: `output/satellite/`
-- Oblique frames: `output/oblique_3d/`
+- 3D frames: `output/oblique_3d/`
 - Places storefront images: `output/places_storefront_satellite/storefront/`
 - Places satellite images: `output/places_storefront_satellite/satellite/`
 - Places metadata: `output/places_storefront_satellite/manifest.json`

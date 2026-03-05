@@ -5,7 +5,7 @@ const path = require('path');
 const https = require('https');
 
 // ============================================
-// 🧑‍🎓 STUDENT TWEAKS (EDIT THIS BLOCK)
+// TWEAKS (EDIT THIS BLOCK)
 // ============================================
 
 const API_KEY = process.env.GOOGLE_API_KEY || 'AIzaSyDf2b_bwfWvNMgMr2XZdTfbcXQHxWqux8A';
@@ -35,7 +35,7 @@ const SATELLITE_MAPTYPE = 'satellite';
 const REQUEST_DELAY_MS = 120;
 
 // ============================================
-// 🔒 WORKSHOP LOGIC (DON'T EDIT BELOW)
+// WORKSHOP LOGIC (DON'T EDIT BELOW)
 // ============================================
 
 function hasFlag(flag) {

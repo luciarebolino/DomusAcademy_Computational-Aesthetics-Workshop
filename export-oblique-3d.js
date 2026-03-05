@@ -6,7 +6,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 // ============================================
-// 🧑‍🎓 STUDENT TWEAKS (EDIT THIS BLOCK)
+// TWEAKS (EDIT THIS BLOCK)
 // ============================================
 
 const API_KEY = process.env.GOOGLE_API_KEY || 'AIzaSyDf2b_bwfWvNMgMr2XZdTfbcXQHxWqux8A';
@@ -29,7 +29,7 @@ const MESH_ACCURACY_PERCENT = 100; // 100 = original (no mesh warp), 0 = very ro
 const LOW_MESH_SEED = 1337;
 
 // ============================================
-// 🔒 WORKSHOP LOGIC (DON'T EDIT BELOW)
+// WORKSHOP LOGIC (DON'T EDIT BELOW)
 // ============================================
 
 function assembleVideoFromFrames({ outputDir, pattern, outputVideo, fps = 30 }) {

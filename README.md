@@ -1,5 +1,9 @@
-#<img width="1052" height="526" alt="Screenshot 2026-03-05 at 8 38 38 PM" src="https://github.com/user-attachments/assets/e1570fb2-2b72-45a5-872e-5cdfff43e204" />
-Computational Aesthetics
+# Computational Aesthetics Workshop
+
+A hands-on toolkit to collect and render visual data from Google Street View, satellite maps, and Places.
+Use this repository to generate image sequences and videos for route-based and place-based computational aesthetics experiments.
+
+<img width="1052" height="526" alt="Screenshot 2026-03-05 at 8 38 38 PM" src="https://github.com/user-attachments/assets/e1570fb2-2b72-45a5-872e-5cdfff43e204" />
 
 
 
@@ -23,7 +27,7 @@ Computational Aesthetics
 ---
 
 ## HOW TO GET DATA
-We will Use Google APIs to scrape information ...
+We will use Google APIs to collect visual and spatial data.
 
 ---
 
@@ -44,9 +48,9 @@ In Google Cloud Console:
 ---
 
 - **Google My Maps** https://www.google.com/maps/d/
-Trace Line percorso for car, export file as KML, drag and drop the file in this folder and name it points.kml (IMPO!!)
+Trace a route for a car, export it as a KML file, drag and drop it into this folder, and name it `points.kml` (important).
 - **Google Places** https://developers.google.com/maps/documentation/places/web-service/legacy/supported_types
-Select from this list the tag you want to investigate and scrape
+Select the place type(s) you want to investigate and scrape from this list.
 
 ## 0) Install all libraries (step by step)
 
@@ -111,7 +115,7 @@ npm -v
 ffmpeg -version
 ```
 
-If all 3 commands print a version, setup is OK.
+If all 3 commands print a version, setup is complete.
 
 
 
@@ -132,7 +136,7 @@ From the project root terminal, run:
 npm install
 ```
 
-Do this once on each computer before running scripts.
+Run this once on each computer before launching the scripts.
 
 ---
 
@@ -142,7 +146,7 @@ Only edit values in blocks labeled:
 
 - `TWEAKS (EDIT THIS BLOCK)`
 
-Main input route file:
+Main route input file:
 
 - `points.kml`
 
@@ -191,7 +195,7 @@ npm run oblique:rough
 
 Edit in `export-places-storefront-satellite.js`:
 
-- `BBOX_COORDS` with format: `west,south,east,north`  (take bbox from here in CSV format: https://boundingbox.klokantech.com/)
+- `BBOX_COORDS` with format: `west,south,east,north` (get the bbox in CSV format here: https://boundingbox.klokantech.com/)
 - `PLACE_TYPES`, example: `['restaurant']` or `['restaurant', 'cafe']`
 
 Then run:
@@ -219,8 +223,8 @@ npm run places
 
 1. `command not found: node` → Node.js not installed
 2. `command not found: ffmpeg` → FFmpeg not installed
-3. API errors (`REQUEST_DENIED`, `OVER_QUERY_LIMIT`) → check billing, enabled APIs, API key restrictions
-4. Empty output for places → bbox too small/wrong, or place type has no matches in that area
+3. API errors (`REQUEST_DENIED`, `OVER_QUERY_LIMIT`) → check billing, enabled APIs, and API key restrictions
+4. Empty output for places → bbox is too small/incorrect, or the selected place type has no matches in that area
 
 ---
 

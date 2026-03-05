@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-03-05T21:13:15.414Z",
+  "bbox": {
+    "north": 41.9124,
+    "south": 41.8986,
+    "east": 12.5036,
+    "west": 12.4795
+  },
+  "placeTypes": [
+    "restaurant"
+  ],
+  "maxPlaces": 10,
+  "totals": {
+    "places": 10,
+    "storefrontOk": 10,
+    "satelliteOk": 10
+  },
+  "items": [
+    {
+      "placeId": "ChIJFaDHddNhLxMRsQNFtRkwdgQ",
+      "name": "Hortus Bar",
+      "lat": 41.9098257,
+      "lng": 12.4803128,
+      "types": [
+        "bar",
+        "night_club",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "rating": 4,
+      "userRatingsTotal": 34,
+      "vicinity": "Viale di Villa Medici, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0001_Hortus_Bar_ChIJFaDH.jpg",
+      "satelliteFile": "satellite/0001_Hortus_Bar_ChIJFaDH.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    },
+    {
+      "placeId": "ChIJW2zyDQFhLxMRUKyZg8yBGio",
+      "name": "Art Cafè",
+      "lat": 41.9093829,
+      "lng": 12.4868701,
+      "types": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "rating": 2.9,
+      "userRatingsTotal": 699,
+      "vicinity": "Viale del Galoppatoio, 33, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0002_Art_Cafe_ChIJW2zy.jpg",
+      "satelliteFile": "satellite/0002_Art_Cafe_ChIJW2zy.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    },
+    {
+      "placeId": "ChIJd9M75sdhLxMRAjhwAuP7wmc",
+      "name": "Cast - Cine Bistrot",
+      "lat": 41.91101209999999,
+      "lng": 12.4875608,
+      "types": [
+        "cafe",
+        "meal_takeaway",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "rating": 2.8,
+      "userRatingsTotal": 126,
+      "vicinity": "Largo Marcello Mastroianni, 1, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0003_Cast_-_Cine_Bistrot_ChIJd9M7.jpg",
+      "satelliteFile": "satellite/0003_Cast_-_Cine_Bistrot_ChIJd9M7.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    },
+    {
+      "placeId": "ChIJpR7O4gZhLxMRXjDB6aVs3aY",
+      "name": "San Marco",
+      "lat": 41.9096306,
+      "lng": 12.4918413,
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "rating": 4.1,
+      "userRatingsTotal": 2547,
+      "vicinity": "Via Sardegna, 38/D, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0004_San_Marco_ChIJpR7O.jpg",
+      "satelliteFile": "satellite/0004_San_Marco_ChIJpR7O.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    },
+    {
+      "placeId": "ChIJEyPfOAdhLxMRbOlNoxohhxM",
+      "name": "Girarrosto Fiorentino",
+      "lat": 41.9086568,
+      "lng": 12.4908409,
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "rating": 4.4,
+      "userRatingsTotal": 1151,
+      "vicinity": "Via Sicilia, 46, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0005_Girarrosto_Fiorentino_ChIJEyPf.jpg",
+      "satelliteFile": "satellite/0005_Girarrosto_Fiorentino_ChIJEyPf.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    },
+    {
+      "placeId": "ChIJT2gzIQdhLxMRXj6dENnSDlM",
+      "name": "Ristorante Sardegna Roma",
+      "lat": 41.90933210000001,
+      "lng": 12.4907701,
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "rating": 4.6,
+      "userRatingsTotal": 56,
+      "vicinity": "Via Sardegna, 34-36, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0006_Ristorante_Sardegna_Roma_ChIJT2gz.jpg",
+      "satelliteFile": "satellite/0006_Ristorante_Sardegna_Roma_ChIJT2gz.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    },
+    {
+      "placeId": "ChIJM2f5IwdhLxMRsa96J6mZTyE",
+      "name": "La Baia",
+      "lat": 41.909236,
+      "lng": 12.4907982,
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "rating": 4.1,
+      "userRatingsTotal": 7,
+      "vicinity": "Via Sardegna, 61/63, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0007_La_Baia_ChIJM2f5.jpg",
+      "satelliteFile": "satellite/0007_La_Baia_ChIJM2f5.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    },
+    {
+      "placeId": "ChIJRXpSzABhLxMRSKzgGV5xFZU",
+      "name": "Pasticceria Gelateria Lotti",
+      "lat": 41.9091221,
+      "lng": 12.4898295,
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "rating": 4.4,
+      "userRatingsTotal": 147,
+      "vicinity": "Via Sardegna, 19, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0008_Pasticceria_Gelateria_Lotti_ChIJRXpS.jpg",
+      "satelliteFile": "satellite/0008_Pasticceria_Gelateria_Lotti_ChIJRXpS.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    },
+    {
+      "placeId": "ChIJzWQNOgdhLxMRv170YjLaUHU",
+      "name": "Sapori d'Ischia",
+      "lat": 41.90875940000001,
+      "lng": 12.490418,
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "rating": 4.2,
+      "userRatingsTotal": 526,
+      "vicinity": "00187, Via Marche, 19, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0009_Sapori_dIschia_ChIJzWQN.jpg",
+      "satelliteFile": "satellite/0009_Sapori_dIschia_ChIJzWQN.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    },
+    {
+      "placeId": "ChIJ_1ILRQZhLxMRoSpKnSqOjAs",
+      "name": "Ai Fienaroli",
+      "lat": 41.9098578,
+      "lng": 12.4932077,
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "rating": 4.4,
+      "userRatingsTotal": 1016,
+      "vicinity": "Via Piemonte, 125, Roma",
+      "sourceType": "restaurant",
+      "storefrontFile": "storefront/0010_Ai_Fienaroli_ChIJ_1IL.jpg",
+      "satelliteFile": "satellite/0010_Ai_Fienaroli_ChIJ_1IL.jpg",
+      "storefrontError": null,
+      "satelliteError": null
+    }
+  ]
+}

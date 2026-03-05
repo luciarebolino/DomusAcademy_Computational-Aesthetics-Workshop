@@ -1,0 +1,27 @@
+{
+  "name": "domus-workshop-exports",
+  "version": "1.0.0",
+  "description": "Workshop export scripts for streetview, satellite, oblique, and places captures.",
+  "main": "export-streetview.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "street": "node export-streetview.js",
+    "street:check": "node export-streetview.js --check",
+    "satellite": "node export-satellite.js --zoom 19 --maptype satellite",
+    "satellite:check": "node export-satellite.js --check",
+    "oblique": "node export-oblique-3d.js --zoom 21.5 --tilt 67.5 --limit 160 --wait 650",
+    "oblique:quick": "node export-oblique-3d.js --zoom 21.5 --tilt 67.5 --limit 30 --wait 650",
+    "oblique:check": "node export-oblique-3d.js --check",
+    "oblique:rough": "node export-oblique-3d.js --accuracy 35 --zoom 21.5 --tilt 67.5 --limit 120 --wait 650",
+    "oblique:rough:quick": "node export-oblique-3d.js --accuracy 35 --zoom 21.5 --tilt 67.5 --limit 40 --wait 650",
+    "oblique:rough:check": "node export-oblique-3d.js --accuracy 35 --check",
+    "places": "node export-places-storefront-satellite.js",
+    "places:check": "node export-places-storefront-satellite.js --check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^24.38.0"
+  }
+}
